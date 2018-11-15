@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:src="@drawable/capture"
+            android:id="@+id/ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title:"
+    />
+    <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venom"
+            android:background="@android:color/transparent"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview:"
+    />
+    <EditText
+            android:id="@+id/etOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When Eddie Brock acquires the powers
+of a symbiote, he will have to release his
+alter-ego Venom to save his life."
+            android:background="@android:color/transparent"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Langauge:"
+    />
+    <EditText
+            android:id="@+id/etLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:background="@android:color/transparent"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release date:"
+    />
+    <EditText
+            android:id="@+id/etRelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03-10-2018"
+            android:background="@android:color/transparent"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suitable for children below 13:"
+    />
+    <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:background="@android:color/transparent"
+    />
+
+</LinearLayout>
