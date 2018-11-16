@@ -11,34 +11,31 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_name"
+            android:text="@string/movie_name"
             />
     <EditText
             android:id="@+id/etName"
             android:hint="@string/et_name_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
             />
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_description"
+            android:text="@string/movie_description"
             />
     <EditText
             android:id="@+id/etDescription"
             android:hint="@string/et_description_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
             />
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_language"
+            android:text="@string/movie_language"
     />
     <RadioGroup
-            android:id="@+id/rg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -71,7 +68,7 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tv_date"
+            android:text="@string/movie_date"
     />
     <EditText
             android:id="@+id/etDate"
@@ -81,16 +78,42 @@
             android:inputType="date"
     />
     <CheckBox
-            android:id="@+id/cb"
+            android:id="@+id/cbCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/checkbox_text"
     />
-
-    <Button
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btnAddMovie"
+            android:orientation="horizontal"
+            android:weightSum="2">
+        <CheckBox
+                android:id="@+id/cbViolence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_violence"
+                android:layout_weight="1"
+                android:visibility="invisible"
+        />
+        <CheckBox
+                android:id="@+id/cbLanguageUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox_language_used"
+                android:layout_weight="1"
+                android:visibility="invisible"
+        />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+    <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/btn_add_movie"
     />
+    </LinearLayout>
 </LinearLayout>

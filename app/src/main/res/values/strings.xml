@@ -1,16 +1,23 @@
 <resources>
     <string name="app_name">MovieRater</string>
-    <string name="tv_name">Name</string>
-    <string name="tv_description">Description</string>
+    <string name="movie_name">Name</string>
+    <string name="movie_description">Description</string>
+    <string name="movie_language">Language</string>
+    <string name="movie_date">Release date</string>
     <string name="et_name_hint">Enter the title of movie</string>
     <string name="et_description_hint">Enter a short description of the movie</string>
-    <string name="tv_language">Language</string>
+    <string name="et_date_hint">Enter release date</string>
     <string name="rb_english">English</string>
     <string name="rb_chinese">Chinese</string>
     <string name="rb_malay">Malay</string>
     <string name="rb_tamil">Tamil</string>
-    <string name="tv_date">Release date</string>
-    <string name="et_date_hint">Enter release date</string>
     <string name="checkbox_text">Not suitable for all audience</string>
+    <string name="checkbox_violence">Violence</string>
+    <string name="checkbox_language_used">Language used</string>
     <string name="btn_add_movie">Add Movie</string>
+    <string name="detail_title">Title:</string>
+    <string name="detail_overview">Overview:</string>
+    <string name="detail_language">Language:</string>
+    <string name="detail_release_date">Release date:</string>
+    <string name="detail_suitable">Suitable for children below 13:</string>
 </resources>
