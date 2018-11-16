@@ -12,30 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        cbCheckbox.setOnClickListener() {
-            if (cbCheckbox.isChecked == true) {
+        cbCheckbox.setOnClickListener(View.OnClickListener {
+            if (cbCheckbox.isChecked == true)
+            {
                 cbViolence.visibility = View.VISIBLE
                 cbLanguageUsed.visibility = View.VISIBLE
             } else {
                 cbViolence.visibility = View.INVISIBLE
                 cbLanguageUsed.visibility = View.INVISIBLE
             }
-        }
-
-        btnAdd.setOnClickListener( {
-            var validate = true
-            if(etName.text.isEmpty()) {
-                validate = false
-                etName.setError("Field empty")
-            }
-            if(etDescription.text.isEmpty()) {
-                validate = false
-                etDescription.setError("Field empty")
-            }
-            if(etDate.text.isEmpty()) {
-                validate = false
-                etDate.setError("Field empty")
-            }
+        })
 
             var languageUsed = ""
             if(cbLanguageUsed.isChecked) {
@@ -59,6 +45,21 @@ class MainActivity : AppCompatActivity() {
             }
             else if (rbTamil.isChecked) {
                 language = "Tamil"
+            }
+
+        btnAdd.setOnClickListener( {
+            var validate = true
+            if(etName.text.isEmpty()) {
+                validate = false
+                etName.setError("Field empty")
+            }
+            if(etDescription.text.isEmpty()) {
+                validate = false
+                etDescription.setError("Field empty")
+            }
+            if(etDate.text.isEmpty()) {
+                validate = false
+                etDate.setError("Field empty")
             }
 
             if(validate) {
